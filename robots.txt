@@ -7,4 +7,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://rai-ymca21.epizy.com/sitemap.xml
+Sitemap: https://rai-ymca21.github.io/sitemap.xml

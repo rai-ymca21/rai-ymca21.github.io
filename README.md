@@ -1,7 +1,8 @@
 # rai_ymca
-We are a group of college students like you, who are attending online classes due to covid and struggling to find notes and guidance on online courses.
-Why did we come with the idea to make this website?
+--> RAI Ymca is a non-profit website created to help college students with study materials, guidance on online courses, and much more!
 
-It all started when we got fewer marks in JEE Mains. After attending various physical counsellings from college to college for admission, looking for the best possible branch in the best possible college, we got the newly-launched Robotics and Artificial Intelligence branch at YMCA, Faridabad. We were happy because, in those competitive days, it was difficult for a student with a low JEE Main rank to get into a good college.
-But who knew that in our journey of B.Tech in the newly-launched branch, we would not have any senior or fully defined curriculum? We were stuck at home and were attending online classes due to Covid. With no physical interaction with classmates, seniors or professors, we were not getting proper notes and guidance on online courses. Studying from home was frustrating us. So, we decided that we would not let our juniors suffer the same kind of pain and came up with the idea of ​​creating a website for our newly launched branch. We thought of organizing our complete data, i.e. syllabus, notes and online resources, on that website.
---> It's a non-profit website created to help college students with study materials, guidance on online courses, and much more! 
+In the Pset8 of the CS50's Introduction to Computer Science course, we got the problem of developing a website with four inter-connected web pages. So, I came up with an idea, what if I solve a real-life problem while setting up this problem?
+During Corona, we were stuck at home and were attending online classes due to lockdown. With no physical interaction with classmates, seniors or professors, we were not getting proper notes and guidance on online courses.
+So, I got the idea to create a website for our newly started branch, where we will organize our complete data, i.e. syllabus, notes and online resources.
+
+--> The development and hosting of this website were entirely done by me. Currently, I manage this website, and the credit of notes, syllabus and other resources present on the website go to my respected teachers and fellow friends.

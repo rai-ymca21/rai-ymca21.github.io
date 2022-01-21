@@ -1,0 +1,10 @@
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Unnecessarybot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://rai-ymca21.epizy.com/sitemap.xml

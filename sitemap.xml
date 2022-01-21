@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://rai-ymca21.epizy.com/</loc>
-		<changefreq>daily</changefreq> 
-	</url>
-	<url>
-		<loc>https://rai-ymca21.epizy.com/syllabus.html/</loc>
-		<changefreq>daily</changefreq> 
-	</url>
-	<url>
-		<loc>https://rai-ymca21.epizy.com/resources.html/</loc>
-		<changefreq>daily</changefreq> 
-	</url>
-	<url>
-		<loc>https://rai-ymca21.epizy.com/about.html/</loc>
-		<changefreq>daily</changefreq> 
-	</url>
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+<url>
+<loc>https://rai-ymca21.github.io/</loc>
+<lastmod>2022-01-21T15:46:56+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://rai-ymca21.github.io/index.html</loc>
+<lastmod>2022-01-21T15:46:56+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://rai-ymca21.github.io/syllabus.html</loc>
+<lastmod>2022-01-21T15:46:56+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://rai-ymca21.github.io/resources.html</loc>
+<lastmod>2022-01-21T15:46:56+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://rai-ymca21.github.io/about.html</loc>
+<lastmod>2022-01-21T15:46:56+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>

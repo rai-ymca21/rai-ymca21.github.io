@@ -1,4 +1,4 @@
-# rai_ymca
+# rai_ymca21
 --> RAI Ymca is an Open Source nonprofit website created to help college students with study materials, guidance on online courses, and much more! 
 
 In the Pset8 of the CS50's Introduction to Computer Science course, we got the problem of developing a website with four inter-connected web pages. So, I came up with an idea, what if I solve a real-life problem while setting up this problem?

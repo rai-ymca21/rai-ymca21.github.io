@@ -22,23 +22,47 @@
                 font-family: "Comic Sans MS", "comic" !important;
             }
             /* normal */
-            #more, .mor {display: none;}
-            .w3-theme-gradient {
-                color: #000 !important;
-                background:-webkit-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
-            .w3-theme-gradient {
-                color: #000 !important;
-                background:-moz-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
-            .w3-theme-gradient {
-                color: #000 !important;
-                background:-o-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
-            .w3-theme-gradient {
-                color: #000 !important;
-                background:-ms-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
-            .w3-theme-gradient {
-                color: #000 !important;
-                background: linear-gradient(to top,#64B5F6 25%,#42A5F5 75%)}
+            body, .grad {
+            background: linear-gradient(-45deg, #ee7752, #23a6d5, #e73c7e, #23d5ab);
+            background-size: 500% 500%;
+            animation: gradient 20s ease infinite;
+            font-family: "Comic Sans MS", "comic" !important;
+            color: white;
+            font-size: larger;
+            }
+            #more, .mor {
+                display: none;
+            }
             
+            @keyframes gradient {
+            0% {
+                background-position: 35% 50%;
+            }
+            50% {
+                background-position: 60% 50%;
+            }
+            100% {
+                background-position: 35% 50%;
+            }
+            }
+            .block {
+                background-color: white;
+                color: black;
+                border-radius: 40px;
+            }
+            .border {
+                border-radius: 20px;
+                box-shadow: 6px 4px 3px white;
+            }
+            .borderonly {
+                border-radius: 20px;
+                box-shadow: 6px 4px 3px white;
+            }
+            .w3-hover-blue:hover {
+                background-color: #e73c7e !important;
+                border-radius: 20px;
+                cursor: pointer;
+            }
             li {
             font-weight: bold;
             text-align: left;
@@ -74,21 +98,20 @@
             }
         </style>
         <script>
-            function myFunction() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn");
+            function myFunction(Btn, id) {
+            const more = id;
+            const myBtn = Btn;
+            var moreText = document.getElementById(more);
+            var btnText = document.getElementById(myBtn);
 
-                if (dots.style.display === "none") {
-                    dots.style.display = "inline";
-                    btnText.innerHTML = "&or; Read more";
-                    moreText.style.display = "none";
-                } 
-                else {
-                    dots.style.display = "none";
-                    btnText.innerHTML = "&and; Read less";
-                    moreText.style.display = "inline";
-                }
+            if (moreText.style.display === "inherit") {
+            btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp; ";
+            moreText.style.display = "none";
+            } 
+            else {
+            btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp; ";
+            moreText.style.display = "inherit";
+            }
             }
             function redirect(){
             var email = "rai.ymca21@gmail.com"
@@ -96,26 +119,32 @@
             window = window.open(mailto_link, 'emailWindow')
             if (window && window.open && !window.closed)         
                 window.close()
-            } 
+            }
         </script>
         
-        <title>Homepage: RAI Ymca!</title>
+        <title>Home: RAI Ymca!</title>
     </head>
     <body class="w3-cursive w3-theme-l3">
-        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-xlarge w3-theme-gradient" style="width:320px;" id="mySidebar">
-            <header class="w3-padding-small w3-bar-item w3-button w3-margin w3-cursive w3-theme-gradient" style="width: 90%;">
+        <div class="w3-sidebar w3-bar-block grad w3-collapse w3-card w3-xlarge" style="width:320px;" id="mySidebar">
+            <script>
+                const isMobile = window.matchMedia("only screen and (max-width: 994px)").matches;
+            if (!isMobile) {
+                document.getElementById("mySidebar").style.background = "transparent";
+            }
+            </script>
+            <header class="w3-padding-small w3-bar-item w3-margin w3-cursive border" style="width: 90%;">
             <h1 class="w3-center w3-cursive"><b><img src="ico.png" style ="max-width: 30%; width: 90%;" alt="RAI"> Ymca!</b></h1>
             <h2 class="w3-cursive w3-xlarge w3-center">Welcomes 🥂 You!</h2>
             </header>
             <main class = "sem">
-                <button class="w3-bar-item w3-button w3-margin w3-theme-gradient w3-hide-large" style="width:90%;" onclick="w3_close()">Close &times;</button>
-                <a href="#" class="cur w3-bar-item w3-button w3-margin w3-hover-blue w3-theme-gradient" style="width:90%;">Home</a>
-                <a href="syllabus.html" class="w3-bar-item w3-button w3-margin w3-hover-blue w3-theme-gradient" style="width:90%;">Syllabus</a>
-                <a href="resources.html" class="w3-bar-item w3-button w3-margin w3-hover-blue w3-theme-gradient" style="width:90%;">Resources</a>
-                <a href="about.html" class="w3-bar-item w3-button w3-margin w3-hover-blue w3-theme-gradient" style="width:90%;">About Us</a>
-                <button onclick="alert ('Not Ready Yet!\r\nComing Soon!')" class="w3-bar-item w3-button w3-hover-blue w3-theme-gradient" style="width:90%; margin: 8px 16px 32px 16px;">FAQs</button>
-            </main>
-            <footer class="w3-bar-item w3-padding-small w3-margin w3-theme-gradient" style="width: 90%;">
+                <button class="w3-bar-item w3-button w3-margin w3-hover-blue w3-hide-large borderonly" style="width:90%;" onclick="w3_close()">Close &times;</button>
+                <a href="#" class="cur w3-bar-item w3-button w3-margin w3-hover-blue borderonly" style="width:90%;">Home</a>
+                <a href="syllabus.html" class="w3-bar-item w3-button w3-margin w3-hover-blue borderonly" style="width:90%;">Syllabus</a>
+                <a href="resources.html" class="w3-bar-item w3-button w3-margin w3-hover-blue borderonly" style="width:90%;">Resources</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-margin w3-hover-blue borderonly" style="width:90%;">About Us</a>
+                <button onclick="alert ('Not Ready Yet!\r\nComing Soon!')" class="w3-bar-item w3-button w3-hover-blue borderonly" style="width:90%; margin: 8px 16px 32px 16px;">FAQs</button>
+            </main> <!-- <hr style="border-bottom: 5px solid white; border-radius: 30px;" class="w3-margin"> -->
+            <footer class="w3-bar-item w3-padding-small w3-margin border" style="width: 90%;">
                 <h2 class="w3-cursive w3-center" style="font-size: large; font-weight: bold;">
                     Want to connect with us and recieve future updates?<br>Join our Community on <a href="https://discord.gg/ZpF6DPTvWA" target="_blank" class = "w3-hover-blue w3-round">Discord</a>
                 </h2><hr>
@@ -123,36 +152,37 @@
             </footer>
         </div>
         <div class="w3-main" style="margin-left:320px">
-            <div class="w3-theme-gradient w3-padding-small">
+            <div class= "w3-padding-small">
                 <header class="w3-margin">
-                    <button class="w3-button w3-theme-gradient w3-xlarge w3-hover-blue" onclick="w3_open()">&#9776;</button>
-                    <button class="w3-button w3-theme-gradient w3-xlarge w3-hover-blue" onclick="window.location.href ='#';">
+                    <button class="w3-button w3-xlarge w3-hover-blue borderonly" onclick="w3_open()">&#9776;</button>
+                    <button class="w3-button w3-xlarge w3-hover-blue borderonly" onclick="window.location.href ='#';">
                         <span class="cur w3-right-align iconify" data-icon="ant-design:home-filled"></span>
                     </button>
                 </header>
                 <header class="w3-display-topright w3-padding-small w3-margin">
-                    <button class="w3-button w3-theme-gradient w3-xlarge w3-hover-blue" onclick="window.open('https://forms.gle/hXifWt3TThzQuyGV9', '_blank');">
+                    <button class="w3-button w3-xlarge w3-hover-blue borderonly" onclick="window.open('https://forms.gle/hXifWt3TThzQuyGV9', '_blank');">
                         <span class="iconify" data-icon="fluent:person-feedback-20-filled"></span>
                     </button>
-                    <button class="w3-button w3-theme-gradient w3-xlarge w3-hover-blue" onclick="redirect()">
+                    <button class="w3-button w3-xlarge w3-hover-blue borderonly" onclick="redirect()">
                         <span class="iconify" data-icon="fluent:mail-add-20-filled"></span>
                     </button>
-                    <button class="w3-button w3-theme-gradient w3-xlarge w3-hover-blue" onclick="window.open('https://discord.gg/ZpF6DPTvWA', '_blank');">
+                    <button class="w3-button w3-xlarge w3-hover-blue borderonly" onclick="window.open('https://discord.gg/ZpF6DPTvWA', '_blank');">
                         <span class="iconify" data-icon="fa-brands:discord"></span>
                     </button>
                 </header>
                 <div class="w3-container">
-                    <h1 style = "font-weight: bold;" class="w3-padding-small w3-center w3-margin w3-cursive">Robotics & Artificial Intelligence: YMCA</h1>
-                </div>
-            </div>
-            <div class="w3-panel w3-padding-large w3-margin w3-leftbar w3-theme-gradient w3-border-blue">
+                    <h1 style = "font-weight: bold; text-shadow: 0 0 30px #8dcaed;" class="w3-padding-small w3-center w3-margin w3-cursive">Robotics & Artificial Intelligence: YMCA</h1>
+                </div>  <hr style="box-shadow: 4px 4px 10px white;  border-bottom: 5px solid white; border-radius: 20px;">
+            </div> 
+            <div class="w3-panel w3-padding-large w3-margin block w3-border-blue">
                 <h2 class="w3-cursive w3-xlarge">Welcome 🥂</h2>
                 <hr>
                 <p class="w3-large">Robotics & Artificial Intelligence is a multi-disciplinary field in which we learn how to combine the knowledge of AI and Robotics to develop an Intelligent Machine. The term "Intelligent machine" means a machine that works like daily life machines but also carries the capabilities of automating its tasks based on the preference of its user and past experiences. It doesn't need constant guidance as it learns from its past experiences or; we can say that it is programmed to do tasks on its own and learn. That's where the role of AI comes.</p>
                 <hr>
-                <p class="w3-large">If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here
+                <p class="w3-large">
+                    <span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue">&nbsp;&nbsp;&or;&nbsp; </span>If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here
                     <span id="dots">...</span>
-                    <span id="more" class="w3-large"><br>
+                    <span id = "1s" style="display: none;"><br>
                         What's the difference b/w a manual vacuum cleaner and an AI-driven vacuum cleaner?
                         In the case of a manual vacuum cleaner, we have to move around the whole house holding it to clean the house. But an AI-driven vacuum cleaner will clean the house on a single command.<br>
                         That's the difference.<br> We had programmed the AI-driven vacuum cleaner to avoid obstacles using machine learning, data from proximity sensors & cameras, and many more functionalities.
@@ -162,9 +192,7 @@
                         Every time we want to improve the functionality of something, there will be a tradeoff.<br>
                         So, that's what we will be exploring in our journey of the B.Tech in Robotics and Artificial Intelligence. Conclusively, I can say that we will learn to solve real-life problems of our society by developing Intelligent machines.
                     </span>
-                </p>
-                <button onclick="myFunction()" id="myBtn" type="button" class="w3-button w3-hover-blue w3-xlarge w3-round-xxlarge w3-border-blue">&or; Read More</button>
-                <hr>
+                </p><hr>
                 <h2 class="w3-cursive w3-xlarge sem">Want to know more about A.I., watch "<a href="https://youtu.be/5IvQ3fYKnfM" target="_blank" class = "w3-hover-blue w3-round no-new">The Age of A.I.</a>" on Youtube</h2>
             </div>
         </div>

@@ -53,7 +53,7 @@
                 border-radius: 20px;
                 box-shadow: 6px 4px 3px white;
             }
-            .w3-hover-blue:hover {
+            .btn, .w3-hover-blue:hover {
                 background-color: #e73c7e !important;
                 border-radius: 20px;
                 cursor: pointer;
@@ -100,11 +100,11 @@
                 var btnText = document.getElementById(myBtn);
 
                 if (moreText.style.display === "inherit") {
-                btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp;&nbsp;";
                 moreText.style.display = "none";
                 } 
                 else {
-                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp;";
                 moreText.style.display = "inherit";
                 }
             }
@@ -175,7 +175,7 @@
                 <p class="w3-large">Robotics & Artificial Intelligence is a multi-disciplinary field in which we learn how to combine the knowledge of AI and Robotics to develop an Intelligent Machine. The term "Intelligent machine" means a machine that works like daily life machines but also carries the capabilities of automating its tasks based on the preference of its user and past experiences. It doesn't need constant guidance as it learns from its past experiences or; we can say that it is programmed to do tasks on its own and learn. That's where the role of AI comes.</p>
                 <hr>
                 <p class="w3-large">
-                    <span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue">&nbsp;&nbsp;&or;&nbsp; </span>If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here...
+                    <span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue btn">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here...
                     <span id = "1s" style="display: none;"><br>
                         What's the difference b/w a manual vacuum cleaner and an AI-driven vacuum cleaner?
                         In the case of a manual vacuum cleaner, we have to move around the whole house holding it to clean the house. But an AI-driven vacuum cleaner will clean the house on a single command.<br>

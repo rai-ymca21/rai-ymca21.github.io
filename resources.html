@@ -52,7 +52,7 @@
                 border-radius: 20px;
                 box-shadow: 6px 4px 3px white;
             }
-            .w3-hover-blue:hover {
+            .blk, .w3-hover-blue:hover {
                 background-color: #e73c7e !important;
                 border-radius: 20px;
                 cursor: pointer;
@@ -99,11 +99,11 @@
                 var btnText = document.getElementById(myBtn);
 
                 if (moreText.style.display === "inherit") {
-                btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp;&nbsp;";
                 moreText.style.display = "none";
                 } 
                 else {
-                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp";
                 moreText.style.display = "inherit";
                 }
             }
@@ -189,7 +189,7 @@
                     <li><a href="https://www.youtube.com/c/DrGajendraPurohitMathematics" target="_blank" class = "w3-hover-blue w3-round">Gajendra Purohit:</a> Maths</li>
                 </ul>
                 <hr>
-                <h3 class="w3-cursive sem"><span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue">&nbsp;&nbsp;&or;&nbsp; </span>Other online resources recommended for your coding journey</h3>
+                <h3 class="w3-cursive sem"><span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Other online resources recommended for your coding journey</h3>
                 <div id = "1s" style="display: none;">
                     <span class = "inc">Courses Available on Youtube:</span>
                     <ul>

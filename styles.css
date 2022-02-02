@@ -1,0 +1,93 @@
+  /* font */
+  @font-face {
+    font-family: "comic";
+    src: url('fonts/comic-webfont.woff2') format('woff2'),
+        url('fonts/comic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.w3-cursive{
+    font-family: "Comic Sans MS", "comic" !important;
+}
+/* normal */
+body, .grad {
+background: linear-gradient(-45deg, #ee7752, #23a6d5, #e73c7e, #23d5ab);
+background-size: 500% 500%;
+animation: gradient 20s ease infinite;
+font-family: "Comic Sans MS", "comic" !important;
+color: white;
+font-size: larger;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 35% 50%;
+}
+50% {
+    background-position: 60% 50%;
+}
+100% {
+    background-position: 35% 50%;
+}
+}
+.block {
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    padding: 5% !important;
+    margin: 5% !important;
+}
+.border {
+    border-radius: 20px;
+    box-shadow: 6px 4px 3px white;
+}
+.btn, .w3-hover-blue:hover {
+    background-color: #e73c7e !important;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn {
+    font-size: inherit !important;
+    font-weight: normal !important;
+}
+li {
+font-weight: bold;
+text-align: left;
+font-size:medium;
+}
+
+#cm{
+font-weight: bold;
+text-align: left;
+font-size:larger;
+}
+
+.inc{
+font-weight: bold;
+text-align: left;
+font-size: large;
+}
+
+.sem{
+font-weight: bolder;
+text-align: left;
+font-size: x-large;
+}
+p {
+font-size: medium;
+}
+ul {
+list-style-type: disc;
+}
+#new {
+font-weight: bold;
+text-align: left;
+font-size:large
+}
+.no-new {
+    font-weight: normal;
+}
+.cur {
+text-decoration: underline!important;
+font-style: italic;
+}

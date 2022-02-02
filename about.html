@@ -52,7 +52,7 @@
                 border-radius: 20px;
                 box-shadow: 6px 4px 3px white;
             }
-            .w3-hover-blue:hover {
+            .btn, .w3-hover-blue:hover {
                 background-color: #e73c7e !important;
                 border-radius: 20px;
                 cursor: pointer;
@@ -107,11 +107,11 @@
             var btnText = document.getElementById(myBtn);
 
             if (moreText.style.display === "inherit") {
-            btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp; ";
+            btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp;&nbsp;";
             moreText.style.display = "none";
             } 
             else {
-            btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp; ";
+            btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp;";
             moreText.style.display = "inherit";
             }
             }
@@ -180,8 +180,7 @@
                     <h2 class="w3-cursive w3-xlarge">Welcome 🥂</h2><hr>
                     <p>We are a group of college students like you, who are attending online classes due to covid and struggling to find notes and guidance on online courses.</p>
                 </header><hr>
-                <main class="w3-large"><span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue">&nbsp;&nbsp;&or;&nbsp; </span>
-                    Why did we come up with the idea to make this website?<br><span id = "1s" style="display: none;"><br>
+                <main class="w3-large"><span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue btn">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Why did we come up with the idea to make this website?<br><span id = "1s" style="display: none;"><br>
                     It all started when we got fewer marks in JEE Mains. After attending various physical counsellings from college to college for admission, looking for the best possible branch in the best possible college, we got the newly-launched Robotics and Artificial Intelligence branch at YMCA, Faridabad. We were happy because, in those competitive days, it was difficult for a student with a low JEE Main rank to get into a good college. <br>
                     But who knew that in our journey of B.Tech in the newly-launched branch, we would not have any senior or fully defined curriculum? We were stuck at home and were attending online classes due to Covid. With no physical interaction with classmates, seniors or professors, we were not getting proper notes and guidance on online courses. Studying from home was frustrating us.<hr>
                     So, we decided that we would not let our juniors suffer the same kind of pain and came up with the idea of ​​creating a website for our newly launched branch. We thought of organizing our complete data, i.e. syllabus, notes and online resources, on that website. </span><hr>

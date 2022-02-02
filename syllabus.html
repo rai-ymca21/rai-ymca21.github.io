@@ -52,10 +52,14 @@
                 border-radius: 20px;
                 box-shadow: 6px 4px 3px white;
             }
-            .w3-hover-blue:hover {
+            .blk, .w3-hover-blue:hover {
                 background-color: #e73c7e !important;
                 border-radius: 20px;
                 cursor: pointer;
+            }
+            .blk {
+                font-size: normal !important;
+                font-weight: normal !important;
             }
             li {
             font-weight: bold;
@@ -107,11 +111,11 @@
                 var btnText = document.getElementById(myBtn);
 
                 if (moreText.style.display === "inherit") {
-                btnText.innerHTML = "&nbsp;&or;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp";
                 moreText.style.display = "none";
                 } 
                 else {
-                btnText.innerHTML = "&nbsp;&and;&nbsp; ";
+                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp;";
                 moreText.style.display = "inherit";
                 }
             }
@@ -176,14 +180,14 @@
                     <h1 style = "font-weight: bold; text-shadow: 0 0 30px #8dcaed;" class="w3-padding-small w3-center w3-margin w3-cursive">Syllabus! (Semester-Wise)</h1>
                 </div>
             </div>
-            <div class="w3-panel w3-padding-large w3-margin block w3-border-blue">
+            <div class="w3-panel w3-padding-large w3-margin block">
                 <h2 class="w3-cursive w3-xlarge">Welcome 🥂</h2>
                 <hr>
                 <p>Here, you will find out the syllabus arranged Semester-Wise & Chapter-Wise.</p>
-                <h3 class="w3-cursive sem"><button onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-border-blue">&nbsp;&or;&nbsp; </button>Semester 1</h3>
+                <h3 class="w3-cursive sem"><span onclick="myFunction(this.id, '1s')" id="bs1" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Semester 1</h3>
                 <ul id="1s" class="mor" style="list-style-type: none; display: inherit;">
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's1')" id="b1" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&and;&nbsp; </button>BET</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's1')" id="b1" class="w3-hover-blue blk">&nbsp;&nbsp;&and;&nbsp;&nbsp;</span> BET</h4>
                         <ul id="s1" class="w3-ul w3-card-4" style="border-radius: 20px;">
                             <li>
                                 <h4 class = "w3-cursive"><a href="https://youtube.com/playlist?list=PL4o5mSAh5J-iFPV2fTZ9r1rcEInkavImA" target="_blank" class = "w3-hover-blue w3-round">DC Networks</a></h4>
@@ -205,23 +209,23 @@
                         </ul>
                     </li>
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's2')" id="b2" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&or;&nbsp; </button>Chemistry</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's2')" id="b2" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Chemistry</h4>
                         <ul id="s2" class="mor w3-ul w3-card-4"></ul>
                     </li>
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's3')" id="b3" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&or;&nbsp; </button>Chemistry Lab</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's3')" id="b3" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Chemistry Lab</h4>
                         <ul id="s3" class="mor w3-ul w3-card-4"></ul>
                     </li>
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's4')" id="b4" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&or;&nbsp; </button>BET Lab</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's4')" id="b4" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> BET Lab</h4>
                         <ul id="s4" class="mor w3-ul w3-card-4"></ul>
                     </li>
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's5')" id="b5" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&or;&nbsp; </button>English</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's5')" id="b5" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> English</h4>
                         <ul id="s5" class="mor w3-ul w3-card-4"></ul>
                     </li>
                     <li>
-                        <h4 class = "inc w3-large w3-cursive"><button onclick="myFunction(this.id, 's6')" id="b6" type="button" class="w3-button w3-hover-blue w3-round-xxlarge w3-large w3-border-blue">&nbsp;&or;&nbsp; </button>Maths</h4>
+                        <h4 class = "inc w3-cursive"><span onclick="myFunction(this.id, 's6')" id="b6" class="w3-hover-blue blk">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> Maths</h4>
                         <ul id="s6" class="mor w3-ul w3-card-4"></ul>
                     </li>
                 </ul>

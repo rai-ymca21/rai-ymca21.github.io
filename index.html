@@ -9,114 +9,8 @@
         <meta name="description" content="Robotics & Artificial Intelligence is a multi-disciplinary field in which we learn how to combine the knowledge of AI and Robotics to develop an Intelligent Machine." />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            /* font */
-            @font-face {
-                font-family: "comic";
-                src: url('fonts/comic-webfont.woff2') format('woff2'),
-                    url('fonts/comic-webfont.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-            }
-            .w3-cursive{
-                font-family: "Comic Sans MS", "comic" !important;
-            }
-            /* normal */
-            body, .grad {
-            background: linear-gradient(-45deg, #ee7752, #23a6d5, #e73c7e, #23d5ab);
-            background-size: 500% 500%;
-            animation: gradient 20s ease infinite;
-            font-family: "Comic Sans MS", "comic" !important;
-            color: white;
-            font-size: larger;
-            }
-            
-            @keyframes gradient {
-            0% {
-                background-position: 35% 50%;
-            }
-            50% {
-                background-position: 60% 50%;
-            }
-            100% {
-                background-position: 35% 50%;
-            }
-            }
-            .block {
-                background-color: white;
-                color: black;
-                border-radius: 40px;
-                padding: 5% !important;
-                margin: 5% !important;
-            }
-            .border {
-                border-radius: 20px;
-                box-shadow: 6px 4px 3px white;
-            }
-            .btn, .w3-hover-blue:hover {
-                background-color: #e73c7e !important;
-                border-radius: 20px;
-                cursor: pointer;
-            }
-            li {
-            font-weight: bold;
-            text-align: left;
-            font-size:medium;
-            }
-
-            #cm{
-            font-weight: bold;
-            text-align: left;
-            font-size:larger;
-            }
-
-            .inc{
-            font-weight: bold;
-            text-align: left;
-            font-size: large;
-            }
-
-            .sem{
-            font-weight: bolder;
-            text-align: left;
-            font-size: x-large;
-            }
-            p {
-            font-size: large;
-            }
-            .no-new {
-                font-weight: normal;
-            }
-            .cur {
-            text-decoration: underline!important;
-            font-style: italic;
-            }
-        </style>
-        <script>
-            function myFunction(Btn, id) {
-                const more = id;
-                const myBtn = Btn;
-                var moreText = document.getElementById(more);
-                var btnText = document.getElementById(myBtn);
-
-                if (moreText.style.display === "inherit") {
-                btnText.innerHTML = "&nbsp;&nbsp;&or;&nbsp;&nbsp;";
-                moreText.style.display = "none";
-                } 
-                else {
-                btnText.innerHTML = "&nbsp;&nbsp;&and;&nbsp;&nbsp;";
-                moreText.style.display = "inherit";
-                }
-            }
-            function redirect(){
-            var email = "rai.ymca21@gmail.com"
-            var mailto_link = 'mailto:' + email
-            window = window.open(mailto_link, 'emailWindow')
-            if (window && window.open && !window.closed)         
-                window.close()
-            }
-        </script>
-        
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
         <title>Home: RAI Ymca!</title>
     </head>
     <body class="w3-cursive w3-theme-l3">
@@ -175,7 +69,7 @@
                 <p class="w3-large">Robotics & Artificial Intelligence is a multi-disciplinary field in which we learn how to combine the knowledge of AI and Robotics to develop an Intelligent Machine. The term "Intelligent machine" means a machine that works like daily life machines but also carries the capabilities of automating its tasks based on the preference of its user and past experiences. It doesn't need constant guidance as it learns from its past experiences or; we can say that it is programmed to do tasks on its own and learn. That's where the role of AI comes.</p>
                 <hr>
                 <p class="w3-large">
-                    <span onclick="myFunction(this.id, '1s')" id="bs1" type="button" class="w3-hover-blue btn">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here...
+                    <span onclick="myFunction(this.id, '1s')" id="bs1" class="w3-hover-blue btn">&nbsp;&nbsp;&or;&nbsp;&nbsp;</span> If we observe the machines around us, we will find many machines that can be intelligent. For the sake of our discussion, we will be taking the example of vacuum cleaner here...
                     <span id = "1s" style="display: none;"><br>
                         What's the difference b/w a manual vacuum cleaner and an AI-driven vacuum cleaner?
                         In the case of a manual vacuum cleaner, we have to move around the whole house holding it to clean the house. But an AI-driven vacuum cleaner will clean the house on a single command.<br>
@@ -190,13 +84,5 @@
                 <h2 class="w3-cursive w3-xlarge sem">Want to know more about A.I., watch "<a href="https://youtu.be/5IvQ3fYKnfM" target="_blank" class = "w3-hover-blue w3-round no-new">The Age of A.I.</a>" on Youtube</h2>
             </div>
         </div>
-        <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-        </script>
     </body>
 </html>
